@@ -1,2 +1,2 @@
 # Projet-apprentissage-automatique
-Projets étudiants 
+Projet étudiants 
