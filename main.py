@@ -1,7 +1,9 @@
 
 import os
-from source import load_data
+from source import load_data, feature_extraction
 import pickle
+
+import importlib as imp
 
 #%% load data
 
@@ -19,3 +21,15 @@ if item_load:
 else:
     pickle_in = open("save\data_init","rb")
     Data = pickle.load(pickle_in)
+
+
+#%% feature extraction
+
+imp.reload(feature_extraction)
+
+ft = feature_extraction.feature(Data)
+
+
+#%% prepare data
+
+
